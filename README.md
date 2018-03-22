@@ -91,4 +91,25 @@ scopeRef.server.refresh();
 The client controller scripts for all widgets on the page can be found in the "Sources" panel of Chrome Developer Tools. If you look at the screen capture below, you'll notice that they are all listed under the "top" window then under the "(no domain)" section. Clicking on the script will open it in the Sources panel code editor window. Most of the widget client controller scripts are listed as <widget_id>.js, others will be listed by the id attribute value of the top level HTML element of the widget.
 
 ![sourcespanel 1](https://user-images.githubusercontent.com/22809154/37751095-7d3f259a-2de4-11e8-9068-6071e8b2ec03.png)
+
+Once the client controller script is open in devtools you can begin debugging directly from there.
+### Making local changes to the client controller code from devtools
+#### Example
+Navigate the to the following URL: https://<yourinstancename>.service-now.com/sp?id=demo_widget_example.
+
+Open Chrome developer tools.
+
+Click on the "Sources" panel in devtools.
+
+Open the global-objects-demo-widget.js file
+
+![sourcespanelcode](https://user-images.githubusercontent.com/22809154/37751162-05d489f4-2de5-11e8-833b-9ab6a7096523.png)
+
+Between lines 7 and 8 add the following line of code:
+```javascript 
+alert("Server script now refreshed");
+```
+Right-click in the script editor window and Save. Do not refresh the page.
+
+![alert](https://user-images.githubusercontent.com/22809154/37751279-98007b62-2de5-11e8-8116-b5afbf58de92.png)
 # Running the Examples
