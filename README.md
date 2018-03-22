@@ -20,7 +20,9 @@ The **console.log()** function will log data to the JavaScript console in the br
 ### Example
 If you look at line 3 and line 16 of the Server Script of the Global Objects Demo Widget, you'll notice that the "input" and "data" objects are logged to the console.
 ![consoleLogging](https://user-images.githubusercontent.com/22809154/37747539-d1f9e5f4-2dd3-11e8-832c-1118b4358818.png)
+
 Open the JavaScript console in Chrome developer tools. Refresh the preview pane and you'll notice the following result in the console:
+
 The input object is undefined and the data object is printed to the console.
 # Advanced Techniques
 # Running the Examples
