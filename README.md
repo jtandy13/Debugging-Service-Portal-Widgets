@@ -26,6 +26,12 @@ Open the JavaScript console in Chrome developer tools. Refresh the preview pane 
 The input object is undefined and the data object is printed to the console.
 ![loggingresult](https://user-images.githubusercontent.com/22809154/37747847-3b9a377e-2dd5-11e8-9ae8-680b5302da49.png)
 ## Using the inbuilt *debugger* function in Chrome and Firefox
+The debugger function can be used in the Client Script of the widget but not the Server Script. Adding the debugger function is like inserting a break point into your code allowing you to step through the code line by line.
+### Example
+In the Client Script of the widget, add the code **debugger;** at line 23.
+![debuggerexample](https://user-images.githubusercontent.com/22809154/37747957-c75804e4-2dd5-11e8-8d63-050712ef7124.png)
 
+Open Chrome Developer Tools. Save the widget and refresh the preview pane. Press the **server.get({collectionName: "presidents"})** button. The JavaScript execution will stop at the word debugger. To see the "response" object contents, hover your mouse over the word "response" in line 14 of the code in devtools.
+![mousehover](https://user-images.githubusercontent.com/22809154/37748017-1c97f270-2dd6-11e8-9548-da1b60ceb703.png)
 # Advanced Techniques
 # Running the Examples
