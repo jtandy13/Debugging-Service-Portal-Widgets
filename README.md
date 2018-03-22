@@ -72,8 +72,19 @@ Once you have a reference to the widget in the JavaScript console, you can take 
 #### Example
 After getting a reference to the Global Objects Demo Widget in the console, run the following code:
 ```javascript 
-scopeRef.data.prop1 = "Pear";
+scopeRef.data.prop1 = "Peach";
 scopeRef.$apply();
 ```
 ![changeScopeData](https://user-images.githubusercontent.com/22809154/37750454-3a943102-2de1-11e8-8e63-1e8310eb7af4.png)
+### Running the widget's Client Controller functions from the console
+Any function that is defined in the Client Scipt (client controller) of the widget is available from the widget's scope. This means that once you have a reference to a widget's scope in the console you will not only be able to change data in the scope object but you can also run any of the client controller functions!
+#### Example
+The getPrettyData() function is defined in the Client Script of the Global Objects Demo Widget. Now that we have a reference to the widget's scope in the console, we can run the function directly from the JavaScript console.
+
+![consolefunction](https://user-images.githubusercontent.com/22809154/37750884-51d2820e-2de3-11e8-99e5-db36e32adeed.png)
+### Re-run the widget's Server Script
+Let's say that we've made some changes to the scope of the widget with the techniques above, we've got our reference to the widget in the console, and we want to see what happens when the server refreshes the data sent to the client controller. We can re-run the widget's Server Script from the console as per below:
+```javascript 
+scopeRef.server.refresh();
+```
 # Running the Examples
