@@ -75,4 +75,5 @@ After getting a reference to the Global Objects Demo Widget in the console, run 
 scopeRef.data.prop1 = "Pear";
 scopeRef.$apply();
 ```
+![changeScopeData](https://user-images.githubusercontent.com/22809154/37750454-3a943102-2de1-11e8-8e63-1e8310eb7af4.png)
 # Running the Examples
