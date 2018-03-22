@@ -51,4 +51,18 @@ Hold down the control key and right-click on the widget. Choose "Log to console 
 
 ![prop1](https://user-images.githubusercontent.com/22809154/37748416-d55959e2-2dd7-11e8-8622-d9319868157a.png)
 # Advanced Techniques
+These advanced debugging techniques are not only cool but can be highly affective when troubleshooting on a production instance where it's not possible to make any changes. All the techniques below are run through Chrome Developer Tools.
+## Creating a reference to the widget's scope in the console ("The puppet master")
+You can think of this technique as an analogy to a puppet show. The puppeteer activates and manipulates the puppets (widgets) with a set of strings. In this case we're creating a second set of strings to the puppet so that we can activate and manipulate the widget from the JavaScript console!
+
+This technique allows you to do the following from the console:
+* Change the widget's scope data
+* Run widget scope functions
+* Re-run the widget Server Script
+
+### Steps to get a reference to the widget's scope in the JavaScript console:
+1. Right-click on the widget and choose "Inspect"
+2. In devtools Elements tab, click on the element with attribute widget=”widget”. It should be a few elements above the currently inspected element. This points the $0 scripting tool at the widget.
+3. In the Javascript console, run the following code: ```var scopeRef = angular.element($0).scope();```
+
 # Running the Examples
