@@ -67,5 +67,12 @@ This technique allows you to do the following from the console:
 ```javascript 
 var scopeRef = angular.element($0).scope();
 ```
-
+### Changing the widget's scope data:
+Once you have a reference to the widget in the JavaScript console, you can take any piece of data in the widget's scope and just change it. After changing a value, run the AngularJS $apply() function on the scope to apply your changes to the page.
+#### Example
+After getting a reference to the Global Objects Demo Widget in the console, run the following code:
+```javascript 
+scopeRef.data.prop1 = "Pear";
+scopeRef.$apply();
+```
 # Running the Examples
