@@ -87,4 +87,8 @@ Let's say that we've made some changes to the scope of the widget with the techn
 ```javascript 
 scopeRef.server.refresh();
 ```
+## Debugging and editing the widget client script directly from the Chrome devtools "Sources" panel
+The client controller scripts for all widgets on the page can be found in the "Sources" panel of Chrome Developer Tools. If you look at the screen capture below, you'll notice that they are all listed under the "top" window then under the "(no domain)" section. Clicking on the script will open it in the Sources panel code editor window. Most of the widget client controller scripts are listed as <widget_id>.js, others will be listed by the id attribute value of the top level HTML element of the widget.
+
+![sourcespanel 1](https://user-images.githubusercontent.com/22809154/37751095-7d3f259a-2de4-11e8-9068-6071e8b2ec03.png)
 # Running the Examples
