@@ -3,7 +3,7 @@ Developing on ServiceNow's Service Portal can be tricky sometimes, especially if
 
 If you are completely new to Service Portal and are starting from scratch, you may want to have a look at these resources below before you start running the examples from this article.
 
-#### Pre-requisites
+#### Pre-requisites:
 [Service Portal Introduction](https://developer.servicenow.com/app.do#!/training/article/app_store_learnv2_serviceportal_jakarta_service_portal_introduction/app_store_learnv2_serviceportal_jakarta_service_portal_introduction_objectives?v=jakarta)
 
 [AngularJS Tutorial w3schools.com](https://www.w3schools.com/angular/default.asp)
@@ -12,7 +12,7 @@ If you are completely new to Service Portal and are starting from scratch, you m
 
 [Service Portal fundamentals: AngularJS scopes](https://www.dylanlindgren.com/2017/10/28/service-portal-fundamentals-angularjs-scopes/)
 
-All examples in this article are run on a widget called "Global Objects Demo Widget". To run the examples in the article you will need to see section "Running the Example Tests" at the end of the article to get setup.
+All examples in this article are run on a widget called "Global Objects Demo Widget". To run the examples in the article you will need to see section [Running the Examples](#running-the-examples) at the end of the article to get setup.
 
 # Basic Techniques
 ## Logging to the JavaScript console
@@ -20,4 +20,7 @@ The **console.log()** function will log data to the JavaScript console in the br
 ### Example
 If you look at line 3 and line 16 of the Server Script of the Global Objects Demo Widget, you'll notice that the "input" and "data" objects are logged to the console.
 ![consoleLogging](https://user-images.githubusercontent.com/22809154/37747539-d1f9e5f4-2dd3-11e8-832c-1118b4358818.png)
+Open the JavaScript console in Chrome developer tools. Refresh the preview pane and you'll notice the following result in the console:
+The input object is undefined and the data object is printed to the console.
 # Advanced Techniques
+# Running the Examples
