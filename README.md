@@ -63,6 +63,6 @@ This technique allows you to do the following from the console:
 ### Steps to get a reference to the widget's scope in the JavaScript console:
 1. Right-click on the widget and choose "Inspect"
 2. In devtools Elements tab, click on the element with attribute widget=”widget”. It should be a few elements above the currently inspected element. This points the $0 scripting tool at the widget.
-3. In the Javascript console, run the following code: ```var scopeRef = angular.element($0).scope();```
+3. In the Javascript console, run the following code: ```javascript var scopeRef = angular.element($0).scope();```
 
 # Running the Examples
