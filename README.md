@@ -112,4 +112,32 @@ alert("Server script now refreshed");
 Right-click in the script editor window and Save. Do not refresh the page.
 
 ![alert](https://user-images.githubusercontent.com/22809154/37751279-98007b62-2de5-11e8-8116-b5afbf58de92.png)
+
+Click the **server.refresh()** button in the widget.
+
+Notice the alert window pops up showing that you've been able to alter the widget directly from devtools!
+### Adding break points to widget client controllers from within devtools
+Another great thing about having access to the client controller code from within devtools is that you can add in break points. Break points can be added to the code by clicking on the line numbers in the code editor window of the "Sources" panel.
+#### Example
+Navigate the to the following URL: https://<yourinstancename>.service-now.com/sp?id=demo_widget_example
+
+Open Chrome developer tools.
+
+Click on the "Sources" panel in devtools.
+
+Open the global-objects-demo-widget.js
+
+Click on line number 15 to add in a break point.
+
+![breakpoint](https://user-images.githubusercontent.com/22809154/37751391-4f9937b4-2de6-11e8-8606-f03096fcd8a6.png)
+
+Click on the **server.get({collectionName: "presidents"})** button.
+
+Notice that JavaScript execution stops directly at line 15.
+
+Hover the mouse over the "data" in line 15 to inspect the response.
+
+![breakpointhover](https://user-images.githubusercontent.com/22809154/37751442-af4978a4-2de6-11e8-9d4d-aedd7b56ed5f.png)
+
+Resume JavaScript execution with the button to the right of the code editor window.
 # Running the Examples
