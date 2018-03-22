@@ -141,3 +141,24 @@ Hover the mouse over the "data" in line 15 to inspect the response.
 
 Resume JavaScript execution with the button to the right of the code editor window.
 # Running the Examples
+To follow along with the examples in this article, you'll need to first add the Global Objects Demo Widget to your developer instance. You can find the update set [here](https://github.com/jtandy13/Global-Objects-Demo-Widget). Download the update set and following the directions below.
+
+To import the update set to your test instance:
+
+Click on "Retrieved Update Sets" in the Application Navigator.
+Click on the Related Link "Import Update Set from XML" at the bottom of the page.
+Click "Choose File", location the downloaded update set from the KB article and press the "Upload" button
+Click on the newly uploaded update set in the list of Retrieved Update Sets. The name will be "Service Portal Global Objects Demo"
+Click the Preview Update Set button in the header.
+Click on Commit Update Set.
+To run the tests, it's good to have two browser tabs open; one with the widget's code and preview pane and the other with the demo page showing.
+
+Tab 1: https://<yourinstancename>.service-now.com/sp_config?id=widget_editor&sys_id=072cfcbc4f04130050d128201310c7d7&spa=1
+
+Tab 2: https://<yourinstancename>.service-now.com/sp?id=demo_page 
+
+In the widget editor, you can enable a preview pane to test any changes that you've made to the widget. To do this click on the hamburger menu at the top right of the editor and select "Enable Preview". Then just use the eye button toggle the widget preview on and off.
+
+![previewwindow](https://user-images.githubusercontent.com/22809154/37752626-1f7d6c38-2ded-11e8-90fc-68f80fd00a9e.png)
+
+After every test remember to remove any changes made and resave the widget.
