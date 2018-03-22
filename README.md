@@ -24,5 +24,8 @@ If you look at line 3 and line 16 of the Server Script of the Global Objects Dem
 Open the JavaScript console in Chrome developer tools. Refresh the preview pane and you'll notice the following result in the console:
 
 The input object is undefined and the data object is printed to the console.
+![loggingresult](https://user-images.githubusercontent.com/22809154/37747847-3b9a377e-2dd5-11e8-9ae8-680b5302da49.png)
+## Using the inbuilt *debugger* function in Chrome and Firefox
+
 # Advanced Techniques
 # Running the Examples
