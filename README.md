@@ -145,12 +145,12 @@ To follow along with the examples in this article, you'll need to first add the 
 
 To import the update set to your test instance:
 
-Click on "Retrieved Update Sets" in the Application Navigator.
-Click on the Related Link "Import Update Set from XML" at the bottom of the page.
-Click "Choose File", location the downloaded update set from the KB article and press the "Upload" button
-Click on the newly uploaded update set in the list of Retrieved Update Sets. The name will be "Service Portal Global Objects Demo"
-Click the Preview Update Set button in the header.
-Click on Commit Update Set.
+1. Click on "Retrieved Update Sets" in the Application Navigator.
+2. Click on the Related Link "Import Update Set from XML" at the bottom of the page.
+3. Click "Choose File", location the downloaded update set from the KB article and press the "Upload" button
+4. Click on the newly uploaded update set in the list of Retrieved Update Sets. The name will be "Service Portal Global Objects Demo"
+5. Click the Preview Update Set button in the header.
+6. Click on Commit Update Set.
 To run the tests, it's good to have two browser tabs open; one with the widget's code and preview pane and the other with the demo page showing.
 
 Tab 1: https://<yourinstancename>.service-now.com/sp_config?id=widget_editor&sys_id=072cfcbc4f04130050d128201310c7d7&spa=1
