@@ -37,5 +37,18 @@ In the Client Script of the widget, add the code **debugger;** at line 23.
 Open Chrome Developer Tools. Save the widget and refresh the preview pane. Press the **server.get({collectionName: "presidents"})** button. The JavaScript execution will stop at the word debugger. To see the "response" object contents, hover your mouse over the word "response" in line 14 of the code in devtools.
 
 ![mousehover](https://user-images.githubusercontent.com/22809154/37748017-1c97f270-2dd6-11e8-9548-da1b60ceb703.png)
+
+To step into the next line in the code use the down arrow button. To allow the JavaScript execution to proceed without stopping, press the "Resume script execution" button.
+
+![resumecodeexecution](https://user-images.githubusercontent.com/22809154/37748188-0924ca96-2dd7-11e8-9768-fe96bafa80d6.png)
+## Log the widget's "scope" object to the console
+Hold down the control key and right-click on the widget.  Choose "Log to console: $scope.data" or "Log to console: $scope". The only difference is whether you want to log the entire scope object to the console or only the data property of the scope object.
+
+### Example
+Navigate the to the following URL: https://<yourinstancename>.service-now.com/sp?id=demo_widget_example
+
+Hold down the control key and right-click on the widget. Choose "Log to console $scope.data".  Open Chrome Developer Tools and expand the object dumped to the console and verify that the value of $scope.data.prop1 is "Apple".
+
+![prop1](https://user-images.githubusercontent.com/22809154/37748416-d55959e2-2dd7-11e8-8622-d9319868157a.png)
 # Advanced Techniques
 # Running the Examples
